@@ -1,0 +1,26 @@
+---
+const name="Jorge Bravo"
+const randomnumber = Math.random()*5
+import BaseLayout from "../layouts/BaseLayout.astro"
+
+---
+
+<BaseLayout>
+    <h1>Esta es la ruta nosotros</h1>
+    <h2>{name}</h2>
+    <h2 id="name"></h2>
+    <h2>Numero de la duerte {randomnumber}</h2>
+</BaseLayout>
+
+<style>
+    h1{
+        color:blue
+    }
+</style>
+<script>
+    console.log("hola");
+    
+    const fill=document.getElementById("name");
+    if (fill){
+        fill.innerHTML = "Jorge Bravo"}
+</script>
